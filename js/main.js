@@ -20,13 +20,3 @@ window.onload = function() {
     Renderer.create( Scene, document.getElementById("canvas") );
     Renderer.update();
 };
-
-
-/* 
-
-TO DO LIST: 
-- keep track of lives and score
-- add gifs for winning and losing
-
-- magnitude bug (syncing slider value with initial magnitude)
-*/

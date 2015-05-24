@@ -86,7 +86,6 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
                 }
                 else { // a life was lost
                     //Game._rings_to_pass = Game._rings.slice(0);
-                    console.log(Game.getLives());
                     if (Game.getLives() == 0) {
                         Gui.reset(0, 1, 3);
                     }
@@ -151,11 +150,7 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
         copy_center_center.copy(center_center);
         rotation_axisX.copy(copy_center_center.cross(axisX));
 
-        //console.log("rotation_axisY is (" + rotation_axisY.x + ", "
-        //            + rotation_axisY.y + ", " + rotation_axisY.z + ")");
-
         _self.thetaX = (_self.thetaX + betaX) % (Math.PI * 2.0);
-        //console.log("_self.thetaX is " + _self.thetaX);
 
         var rotation_axisY = new THREE.Vector3(0, 0, 0);
         var rotation_helperY = new THREE.Vector3(1, 0, 0);
@@ -194,7 +189,6 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
             Game._lives -= 1;
             _self.gameLiveLost = true;
             _self.gameStarted = false;
-            //console.log("AAAAAAGH FALLING THROUGH");
 
             var audio = new Audio('sounds/Basso.mp3');
             audio.play();
@@ -206,7 +200,6 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
 
             if (Game._lives <= 0) {
                _self.gameOver = true;
-                //console.log("you lost");
             }
         }
 
@@ -236,7 +229,6 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
             if (!_self.hasCollisionOccurred) {
 
                 if ( center_ball_center_ring.length() < (ring_radius + Game._ballRadius + tube_radius)) {
-                    //console.log("POSSIBLE COLLISION");
 
                     if (_self.collide( center1, center2, tube_radius )) {
                         //return 1000 + i;
@@ -246,7 +238,6 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
             }
 
             if ( center_ball_center_ring.length() < (ring_radius - Game._ballRadius - tube_radius) ) {
-                //console.log("POSSBLE PASSING THROUGH");
 
                 if ( center1.distanceTo(Game._ball.position) +  center2.distanceTo(Game._ball.position) <
                     ring_radius * 5 + Game._ballRadius ) {
@@ -260,8 +251,6 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
                     if (index !== (-1)) {
                         Game._rings_to_pass.splice(index, 1);
                     }
-                    console.log(Game._rings.length);
-                    console.log("!!!!! PASSING THROUGH. left to pass: " + Game._rings_to_pass.length);
 
                     if (Game._rings_to_pass.length <= 0) {
                         _self.gameOver = true;
@@ -273,40 +262,10 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
                         }
                     }
                     
-
-                    /*
-                    console.log("center1 " + i + " has position (" + center1.x + ", " +
-                    center1.y + ", " + center1.z + ")");
-                    console.log("center2 " + i + " has position (" + center2.x + ", " +
-                    center2.y + ", " + center2.z + ")");
-                    */
-
-
                     // change the hoop color 
                     var hoop = Game._rings[i];
 
-                    hoop.material.color.setRGB (0, 1, 0);
-
-                    //Scene.addObject(hoop);
-                    //Game._rings.insert(i, hoop);
-
-                    /*
-                    if (Game.getLevel() > 0) { // interactive mode
-                        // add balls
-                        var geometry = new THREE.SphereGeometry( 2, 32, 32, 0, Math.PI * 2, 0, Math.PI);
-                        var material = new THREE.MeshPhongMaterial();
-
-                        _self._ball1 = new THREE.Mesh( geometry, material );
-                        _self._ball1.position.copy(center1); 
-
-                        Scene.addObject( _self._ball1 );
-
-                        _self._ball2 = new THREE.Mesh( geometry, material );
-                        _self._ball2.position.copy(center2); 
-
-                        Scene.addObject( _self._ball2 );
-                    }      
-                    */        
+                    hoop.material.color.setRGB (0, 1, 0);       
                 }  
                 return i;
             }
@@ -331,9 +290,7 @@ var PhysicsEngine = PhysicsEngine || new ( function() {
     };
 
     _self.reflect = function ( tube_center ) {
-
-        //console.log("***************COLLISION*****************");
-
+        
         var audio = new Audio('sounds/Ping.mp3');
         audio.play();
 

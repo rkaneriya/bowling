@@ -121,12 +121,12 @@ var Game = Game || new ( function() {
     };
 
     _self.moveInteractiveRing = function( hoopPosition ) {
-        //console.log("hoopPosition is " + hoopPosition);
 
         var current_angle = new THREE.Vector3(0, 0, 1).angleTo(_self._rings[0].position);
         var new_angle = hoopPosition * Math.PI / 180.0 - current_angle;
 
         _self._rings[0].position.applyAxisAngle( new THREE.Vector3(1, 0, 0), new_angle );
+    
     };
 
     _self.addRing = function( i, level, rad ) {
@@ -152,12 +152,9 @@ var Game = Game || new ( function() {
     };
 
     _self.addRings = function(level) {
+        
         // add light blue randomized toroidal hoops
         var rad = 50; // radius in which rings are added 
-
-        console.log("level is " + level);
-        //level = 8; // TODO
-
       
         _self._rings = [];
         _self._rings_to_pass = []; 

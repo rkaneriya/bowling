@@ -7,7 +7,6 @@
 var BallRoller = BallRoller || new ( function() {
     var _self      = this;
 
-    // Instance variables - list of emitters, and global delta time
     _self._prev_t     = undefined;
     _self._cur_t      = undefined;
     _self._isRolling  = false;
