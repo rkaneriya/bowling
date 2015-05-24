@@ -5,8 +5,6 @@ var Main = Main || { };
 
 // when HTML is finished loading, do this
 window.onload = function() {
-    Student.updateHTML();
-
     // Setup renderer, scene and gui
     Gui.init( Main.controlsChangeCallback,
               Main.displayChangeCallback );
