@@ -1,5 +1,5 @@
 # Bowling
-A simple 3D game with custom physics (made for COS 426). 
+A simple 3D game with custom physics (made for COS 426 - Computer Graphics). 
 
 ---
 
@@ -19,11 +19,11 @@ The player can choose between four modes: **Basic**, **Intermediate**, **Advance
 
 ## Implementation 
 
-Created by *rkaneriya, Violeta Ilieva, Kai Okada*. 
+Created by *rkaneriya, Violeta Ilieva, and Kai Okada*. 
 
 Credits: 
 
-* three.js framework for modeling and rendering
+* Modeling and rendering using the [three.js framework](http://www.threejs.org "three.js")
 * Audio files from Mac OS X’s system sound files
 * Earth (Ball Texture): http://planetpixelemporium.com/earth.html
 * Asteroid (Bowl Texture): http://www.spiralgraphics.biz/packs/terrain_desert_barren/?1
