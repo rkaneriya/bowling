@@ -1,9 +1,7 @@
 # Bowling
-A simple 3D web game using three.js and custom physics 
+A simple 3D web game using three.js and custom physics (made for COS 426). 
 
-Credits: @rkaneriya, Violeta Ilieva, Kai Okada
-
-------
+---
 
 ## Instructions
 
@@ -18,3 +16,15 @@ Credits: @rkaneriya, Violeta Ilieva, Kai Okada
 The player can choose between four modes: **Basic**, **Intermediate**, **Advanced**, and **Interactive**. The difference between the first three modes is the number of hoops inside the bowl; the more hoops, the harder it is to roll the ball through all of them in one try.  
 
 **Interactive** mode allows the player to control the position of the hoop along one direction in an attempt to ”catch” the ball as it rolls. The player can also control the tangential velocity of the ball, as well as the force of gravity, as it rolls.
+
+## Implementation 
+
+Created by *rkaneriya, Violeta Ilieva, Kai Okada*. 
+
+Credits: 
+
+* THREE.js framework for modeling and rendering
+* Audio files from Mac OS X’s system sound files
+* Earth (Ball Texture): http://planetpixelemporium.com/earth.html
+* Asteroid (Bowl Texture): http://www.spiralgraphics.biz/packs/terrain desert barren/?1
+* Background: http://hdw.eweb4.com/search/galaxy/
