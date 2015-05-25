@@ -5,11 +5,11 @@ A simple 3D game with custom physics (made for COS 426 - Computer Graphics).
 
 ## Instructions
 
-1) The player specifies the initial magnitude of the ball’s speed in the tangent direction, as well as the magnitude of gravity
+1) The player specifies the initial magnitude of the ball’s speed in the tangent direction, as well as the magnitude of gravity.
 
 2) The ball will roll and either pass through or collide with a number of randomly-generated hoops. 
 
-3) Each time the ball passes through a hoop, the score is incremented by 1 point
+3) Each time the ball passes through a hoop, the score is incremented by 1 point.
 
 4) Once the ball slows and reaches the central hole at the bottom of of the bowl, it falls through, and the player must restart. 
 
@@ -19,7 +19,7 @@ The player can choose between four modes: **Basic**, **Intermediate**, **Advance
 
 ## Implementation 
 
-Created by *rkaneriya, Violeta Ilieva, and Kai Okada*. 
+Created by *@rkaneriya, Violeta Ilieva, and Kai Okada*. 
 
 Credits: 
 
