@@ -1,5 +1,5 @@
 # Bowling
-A simple 3D web game using three.js and custom physics (made for COS 426). 
+A simple 3D game with custom physics (made for COS 426). 
 
 ---
 
