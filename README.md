@@ -26,5 +26,5 @@ Credits:
 * THREE.js framework for modeling and rendering
 * Audio files from Mac OS X’s system sound files
 * Earth (Ball Texture): http://planetpixelemporium.com/earth.html
-* Asteroid (Bowl Texture): http://www.spiralgraphics.biz/packs/terrain desert barren/?1
+* Asteroid (Bowl Texture): http://www.spiralgraphics.biz/packs/terrain_desert_barren/?1
 * Background: http://hdw.eweb4.com/search/galaxy/
