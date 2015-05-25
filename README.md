@@ -1,11 +1,11 @@
 # Bowling
-~ a simple 3D web game using three.js and custom physics 
+A simple 3D web game using three.js and custom physics 
 
 Credits: @rkaneriya, Violeta Ilieva, Kai Okada
 
 ------
 
-## *Instructions* 
+## Instructions
 
 1) The player specifies the initial magnitude of the ball’s speed in the tangent direction, as well as the magnitude of gravity
 
