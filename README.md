@@ -23,7 +23,7 @@ Created by *rkaneriya, Violeta Ilieva, Kai Okada*.
 
 Credits: 
 
-* THREE.js framework for modeling and rendering
+* three.js framework for modeling and rendering
 * Audio files from Mac OS X’s system sound files
 * Earth (Ball Texture): http://planetpixelemporium.com/earth.html
 * Asteroid (Bowl Texture): http://www.spiralgraphics.biz/packs/terrain_desert_barren/?1
